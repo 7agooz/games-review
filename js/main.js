@@ -16,10 +16,8 @@ async function loadGameDetails(gameId) {
 
 window.displayGameDetails = (gameId) => loadGameDetails(gameId);
 
-// Initial load of games
 loadGames();
 
-// Category filter handling
 const categoryLinks = document.querySelectorAll('.category a');
 categoryLinks.forEach(link => {
     link.addEventListener('click', () => {
