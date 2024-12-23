@@ -4,7 +4,7 @@ import { Display } from './ui.js';
 const gameAPI = new GameAPI();
 const displayAll = new Display();
 
-async function loadGames(category = 'shooter') {
+async function loadGames(category = 'mmorpg') {
     const games = await gameAPI.getGames(category);
     displayAll.displayGames(games);
 }
